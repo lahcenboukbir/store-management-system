@@ -1,0 +1,51 @@
+/* table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
+    margin-right: 0.5em;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    color: white;
+    border: 0.15em solid white;
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em #444;
+    box-sizing: content-box;
+    text-align: center;
+    text-indent: 0 !important;
+    font-family: "Courier New", Courier, monospace;
+    line-height: 1em;
+    content: "+";
+    background-color: #7367f0;
+}
+
+table.dataTable.dtr-inline.collapsed
+    > tbody
+    > tr.parent
+    > td.dtr-control:before {
+    content: "-";
+    background-color: #ff4c51;
+} */
+
+@media (max-width: 575.98px) {
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+        justify-content: center !important;
+        overflow-x: scroll;
+    }
+}
+
+div.table-responsive
+    > div.dataTables_wrapper
+    > div.row
+    > div[class^="col-"]:first-child {
+    padding-left: 0 !important;
+}
+
+div.table-responsive
+    > div.dataTables_wrapper
+    > div.row
+    > div[class^="col-"]:last-child {
+    padding: 1px;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
